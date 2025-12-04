@@ -1,0 +1,15 @@
+public class negtopasArray {
+    public static void main(String[] args) {
+        int[] origArr = {-3, 5, -8, 2, -6};
+        int[] pasArr = new int[origArr.length];
+
+        for (int i = 0; i < origArr.length; i++) {
+            pasArr[i] = (origArr[i] < 0) ? -origArr[i] : origArr[i];
+        }
+        System.out.print("Converted Array: ");
+        for (int number : pasArr) {
+            System.out.print(number + " ");
+        }
+        System.out.println();
+        }
+}

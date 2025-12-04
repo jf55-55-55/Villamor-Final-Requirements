@@ -1,0 +1,15 @@
+public class Countbagsakugpasar {
+    public static void main(String[] args) {
+        int[] grades = {70, 80, 90, 60, 75};
+        int passedCount = 0;
+        int failedCount = 0;
+        for (int grade : grades) {
+            if (grade >= 75) {
+                passedCount++;
+            } else {
+                failedCount++;
+            }
+        }
+        System.out.println("Passed: " + passedCount + ", Failed: " + failedCount);
+    }
+}

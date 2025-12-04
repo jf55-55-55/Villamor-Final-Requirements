@@ -1,0 +1,11 @@
+public class EvenGreaterThan20 {
+    public static void main(String[] args) {
+        int[] arr = {10, 22, 24, 15, 30};
+        for (int num : arr) {
+            if (num % 2 == 0 && num > 20) {
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println();
+    }
+}

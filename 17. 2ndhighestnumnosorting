@@ -1,0 +1,23 @@
+public class SecondHighest {
+    public static void main(String[] args) {
+        int[] arr = {1, 5, 2, 8, 3, 9, 4};
+        if (arr == null || arr.length < 2) {
+            System.out.println("Array must have at least 2 elements.");
+            return;
+        }
+
+        int highest = Math.max(arr[0], arr[1]);
+        int secondHighest = Math.min(arr[0], arr[1]);
+
+        for (int i = 2; i < arr.length; i++) {
+            if (arr[i] > highest) {
+                secondHighest = highest;
+                highest = arr[i];
+            } else if (arr[i] > secondHighest && arr[i] != highest) {
+                secondHighest = arr[i];
+            }
+        }
+
+        System.out.println("Second highest number: " + secondHighest);
+    }
+}

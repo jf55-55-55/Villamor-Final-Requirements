@@ -1,8 +1,8 @@
 public class Main {
-public static void main(String[] args) {
-int[] arr = {1, 2, 3, 2, 2, 4};
-int valueToCheck = 2;
-int count = 0;
+     public static void main(String[] args) {
+          int[] arr = {1, 2, 3, 2, 2, 4};
+          int valueToCheck = 2;
+          int count = 0;
 
     for (int num : arr) {
         if (num == valueToCheck) count++;

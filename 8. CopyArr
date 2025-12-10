@@ -1,4 +1,4 @@
-public public class CopyArray {
+public class CopyArray {
     public static void main(String[] args) {
         int[] arrA = {1, 2, 3, 4, 5};
         int[] arrB = new int[arrA.length];
